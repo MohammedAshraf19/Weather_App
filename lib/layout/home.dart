@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
       builder: (context,state){
         return Scaffold(
             body:BuildCondition(
-              condition: WeatherCubit.get(context).weatherModel != null && WeatherCubit.get(context).list!.isNotEmpty,
+              condition: WeatherCubit.get(context).weatherModel != null && WeatherCubit.get(context).list!.isNotEmpty&&WeatherCubit.get(context).fiveWeatherModel != null,
               builder: (context)=>SingleChildScrollView(
                 child: SafeArea(
                   child: Column(
@@ -279,12 +279,12 @@ class Home extends StatelessWidget {
                             series: <ChartSeries<FiveWeatherModel, String>>[
                               SplineSeries<FiveWeatherModel, String>(
                                 dataSource:<FiveWeatherModel>[
-                                  WeatherCubit.get(context).fiveWeatherModel,
-                                  WeatherCubit.get(context).fiveWeatherModel,
-                                  WeatherCubit.get(context).fiveWeatherModel,
-                                  WeatherCubit.get(context).fiveWeatherModel,
-                                  WeatherCubit.get(context).fiveWeatherModel,
-                                  WeatherCubit.get(context).fiveWeatherModel,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
+                                  WeatherCubit.get(context).fiveWeatherModel!,
                                 ],
                                 xValueMapper: (FiveWeatherModel f, _){
                                   return f.list![0].dtTxt.toString().substring(6,11);

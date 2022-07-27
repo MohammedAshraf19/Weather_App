@@ -53,7 +53,7 @@ class WeatherCubit extends Cubit<WeatherStates> {
 
 
 
-  late FiveWeatherModel fiveWeatherModel;
+   FiveWeatherModel? fiveWeatherModel;
   void getFiveWeather({
     String city = "zagazig",
   }) {
