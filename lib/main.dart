@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/layout/cubit/cubit.dart';
 import 'package:weather_app/layout/home.dart';
@@ -22,7 +21,6 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (BuildContext context)=>WeatherCubit()..getCurrentWeather()..getFiveWeather()..getFiveCity(),
       child: MaterialApp(
-        title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

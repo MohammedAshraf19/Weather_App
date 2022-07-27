@@ -1,6 +1,3 @@
-
-import 'dart:ui';
-
 import 'package:buildcondition/buildcondition.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -104,7 +101,7 @@ class Home extends StatelessWidget {
                                 child: OverflowBox(
                                   minWidth: 0,
                                   maxWidth: MediaQuery.of(context).size.width,
-                                  maxHeight: MediaQuery.of(context).size.height /4,
+                                  maxHeight: MediaQuery.of(context).size.height /3.5,
                                   minHeight: 0,
                                   child: Container(
                                     padding:const EdgeInsets.symmetric(horizontal: 15) ,
@@ -226,7 +223,7 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 110,
+                        height: 115,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -238,7 +235,7 @@ class Home extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 180,
                         width: double.infinity,
                         child: ListView.separated(
@@ -261,14 +258,14 @@ class Home extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: Text(
-                          'forcast next dats'.toUpperCase(),
+                          'forecast next dats'.toUpperCase(),
                           style: const TextStyle(
                             fontSize: 20,
                             color: Colors.grey,
                           ),
                         ),
                       ),
-                     Container(
+                     SizedBox(
                         height: 180,
                         width: MediaQuery.of(context).size.width,
 
@@ -318,7 +315,7 @@ Widget otherCity(context,index){
   return Container(
     height: 180,
     width: 180,
-    padding:EdgeInsets.all(10) ,
+    padding:const EdgeInsets.all(10) ,
     child: Card(
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20)
