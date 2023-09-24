@@ -1,16 +1,19 @@
-# weather_app
+# Weather App
 
-A new Flutter project.
+• This App allows you to: -
 
-## Getting Started
+    • Show weather in city.
+    • Search for any city to show it weather.
+    • How forecast for city.
+##
+• App Details: -
 
-This project is a starting point for a Flutter application.
+    • used Cubit for state managnment
+    • used Package Dio for Use API.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Splash Screen
+![Splash](https://github.com/MohammedAshraf19/MovieApp/assets/92050638/164610b9-277d-489e-bc25-3379f13daf7d)
+## Home Screen for Show Weather
+![Home](https://github.com/MohammedAshraf19/MovieApp/assets/92050638/c06cb8f2-1e09-4ee8-8c08-11010ceda162)
+## Search AppBar to Search for cities.
+![Search](https://github.com/MohammedAshraf19/MovieApp/assets/92050638/0f9587ce-f0d3-4849-a0a2-a3b4b03488c4)
